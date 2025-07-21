@@ -14,6 +14,27 @@
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
     </svg>
     </button>
+    <div id="mobile_menu" class="
+  fixed top-0 left-0 h-full w-64 bg-white z-50 p-6
+  transform -translate-x-full
+  transition-transform duration-300 ease-in-out
+  md:hidden
+">
+ <button id="close_menu" class="mb-4">
+    <img src="close_svg.svg" alt="close_button">
+  </button>
+
+  <!-- Nav Links -->
+  <nav class="flex flex-col gap-4">
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">About us</a>
+    <a href="#">Contact us</a>
+    <a href="#">News</a>
+    <a href="#">Support</a>
+    <!-- etc -->
+  </nav>
+</div>
   </div>
   <header class="text-gray-900 body-font sticky top-0 bg-white z-50">
     
@@ -75,34 +96,25 @@
   </div>
 </header>
 
-<div id="menu_mobile" class="hidden md:hidden bg-white border-t border-gray-200 px-5 py-4">
-  <nav class="flex flex-col space-y-4">
-    <a href="#" class="text-gray-900 hover:text-gray-600 py-2">Home</a>
-    <a href="#" class="text-gray-900 hover:text-gray-600 py-2">Products</a>
-    <a href="#" class="text-gray-900 hover:text-gray-600 py-2">About us</a>
-    <a href="#" class="text-gray-900 hover:text-gray-600 py-2">Contact us</a>
-    <a href="#" class="text-gray-900 hover:text-gray-600 py-2">News</a>
-    <a href="#" class="text-gray-900 hover:text-gray-600 py-2">Support</a>
-  </nav>
-</div>
 
 <div class="hero">
   <picture class="hdt-media-wrapper"><source media="(max-width: 767px)" srcset="//1hora.com/cdn/shop/files/CEP001_MB00.jpg?v=1744705968&amp;width=200 200w, //1hora.com/cdn/shop/files/CEP001_MB00.jpg?v=1744705968&amp;width=400 400w, //1hora.com/cdn/shop/files/CEP001_MB00.jpg?v=1744705968&amp;width=600 600w, //1hora.com/cdn/shop/files/CEP001_MB00.jpg?v=1744705968&amp;width=800 800w, //1hora.com/cdn/shop/files/CEP001_MB00.jpg?v=1744705968&amp;width=1000 1000w" width="1296" height="2304"><img src="//1hora.com/cdn/shop/files/h-B-00.jpg?v=1744702382&amp;width=2560" alt="" srcset="//1hora.com/cdn/shop/files/h-B-00.jpg?v=1744702382&amp;width=400 400w, //1hora.com/cdn/shop/files/h-B-00.jpg?v=1744702382&amp;width=600 600w, //1hora.com/cdn/shop/files/h-B-00.jpg?v=1744702382&amp;width=800 800w, //1hora.com/cdn/shop/files/h-B-00.jpg?v=1744702382&amp;width=1000 1000w, //1hora.com/cdn/shop/files/h-B-00.jpg?v=1744702382&amp;width=1200 1200w, //1hora.com/cdn/shop/files/h-B-00.jpg?v=1744702382&amp;width=1400 1400w, //1hora.com/cdn/shop/files/h-B-00.jpg?v=1744702382&amp;width=1600 1600w, //1hora.com/cdn/shop/files/h-B-00.jpg?v=1744702382&amp;width=1800 1800w, //1hora.com/cdn/shop/files/h-B-00.jpg?v=1744702382&amp;width=2000 2000w, //1hora.com/cdn/shop/files/h-B-00.jpg?v=1744702382&amp;width=2200 2200w, //1hora.com/cdn/shop/files/h-B-00.jpg?v=1744702382&amp;width=2400 2400w" width="2560" height="1440" loading="eager" class="hdt-object-pos-mb" sizes="100vw"></picture>
 </div>
 </body>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const button = document.getElementById("menu_toggle");
-  const menu = document.getElementById("menu_mobile");
-  
-  if (button && menu) {
-    button.addEventListener("click", function () {
-      menu.classList.toggle("hidden");
-    });
-  } else {
-    console.log("Button or menu not found");
-  }
-});
+  const toggle = document.getElementById("menu_toggle");
+  const closeBtn = document.getElementById("close_menu");
+  const menu = document.getElementById("mobile_menu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.remove("-translate-x-full");
+    menu.classList.add("translate-x-0");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    menu.classList.add("-translate-x-full");
+    menu.classList.remove("translate-x-0");
+  });
 </script>
 
 
