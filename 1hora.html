@@ -14,6 +14,8 @@
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
     </svg>
     </button>
+  </div>
+  
     <div id="mobile_menu" class="
   fixed top-0 left-0 h-full w-64 bg-white z-50 p-6
   transform -translate-x-full
@@ -25,13 +27,14 @@
   </button>
 
   <!-- Nav Links -->
-  <nav class="flex flex-col gap-4">
-    <a href="#">Home</a>
-    <a href="#">Products</a>
-    <a href="#">About us</a>
-    <a href="#">Contact us</a>
-    <a href="#">News</a>
-    <a href="#">Support</a>
+  <nav class="flex flex-col gap-4 ">
+    <hr class="border-gray-300">
+    <a href="#" class="py-1 border-b border-gray-300">Home</a>
+    <a href="#" class="py-1 border-b border-gray-300">Products</a>
+    <a href="#" class="py-1 border-b border-gray-300">About us</a>
+    <a href="#" class="py-1 border-b border-gray-300">Contact us</a>
+    <a href="#" class="py-1 border-b border-gray-300">News</a>
+    <a href="#" class="py-1 border-b border-gray-300">Support</a>
     <!-- etc -->
   </nav>
 </div>
@@ -115,6 +118,19 @@
     menu.classList.add("-translate-x-full");
     menu.classList.remove("translate-x-0");
   });
+
+  toggle.addEventListener("click", () => {
+  menu.classList.remove("-translate-x-full");
+  menu.classList.add("translate-x-0");
+  toggle.classList.add("hidden"); // hide hamburger
+});
+
+closeBtn.addEventListener("click", () => {
+  menu.classList.add("-translate-x-full");
+  menu.classList.remove("translate-x-0");
+  toggle.classList.remove("hidden"); // show hamburger again
+});
+
 </script>
 
 
