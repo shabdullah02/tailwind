@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <title>1HORA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Products</title>
 </head>
 <body>
-  <div class="sec bg-gray-100 flex items-center justify-center lg:justify-end ">
+     <div class="sec bg-gray-100 flex items-center justify-center lg:justify-end ">
     <button class=" py-2.5 px-4  text-sm ">English
                  <svg class="w-3.5 h-3.5 ml-10 -mr-1 text-base inline-flex items-center " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -99,39 +98,26 @@
   </div>
 </header>
 
-
-<div class="hero">
-  <picture class="hdt-media-wrapper"><source media="(max-width: 767px)" srcset="//1hora.com/cdn/shop/files/CEP001_MB00.jpg?v=1744705968&amp;width=200 200w, //1hora.com/cdn/shop/files/CEP001_MB00.jpg?v=1744705968&amp;width=400 400w, //1hora.com/cdn/shop/files/CEP001_MB00.jpg?v=1744705968&amp;width=600 600w, //1hora.com/cdn/shop/files/CEP001_MB00.jpg?v=1744705968&amp;width=800 800w, //1hora.com/cdn/shop/files/CEP001_MB00.jpg?v=1744705968&amp;width=1000 1000w" width="1296" height="2304"><img src="//1hora.com/cdn/shop/files/h-B-00.jpg?v=1744702382&amp;width=2560" alt="" srcset="//1hora.com/cdn/shop/files/h-B-00.jpg?v=1744702382&amp;width=400 400w, //1hora.com/cdn/shop/files/h-B-00.jpg?v=1744702382&amp;width=600 600w, //1hora.com/cdn/shop/files/h-B-00.jpg?v=1744702382&amp;width=800 800w, //1hora.com/cdn/shop/files/h-B-00.jpg?v=1744702382&amp;width=1000 1000w, //1hora.com/cdn/shop/files/h-B-00.jpg?v=1744702382&amp;width=1200 1200w, //1hora.com/cdn/shop/files/h-B-00.jpg?v=1744702382&amp;width=1400 1400w, //1hora.com/cdn/shop/files/h-B-00.jpg?v=1744702382&amp;width=1600 1600w, //1hora.com/cdn/shop/files/h-B-00.jpg?v=1744702382&amp;width=1800 1800w, //1hora.com/cdn/shop/files/h-B-00.jpg?v=1744702382&amp;width=2000 2000w, //1hora.com/cdn/shop/files/h-B-00.jpg?v=1744702382&amp;width=2200 2200w, //1hora.com/cdn/shop/files/h-B-00.jpg?v=1744702382&amp;width=2400 2400w" width="2560" height="1440" loading="eager" class="hdt-object-pos-mb" sizes="100vw"></picture>
+<div class="sec bg-gray-100 p-10 items-center flex  justify-center text-2xl">
+<p>Cables</p>
 </div>
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -m-4">
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog">
+          <div class="p-6">
+
+            
+           
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
 </body>
-<script>
-  const toggle = document.getElementById("menu_toggle");
-  const closeBtn = document.getElementById("close_menu");
-  const menu = document.getElementById("mobile_menu");
-
-  toggle.addEventListener("click", () => {
-    menu.classList.remove("-translate-x-full");
-    menu.classList.add("translate-x-0");
-  });
-
-  closeBtn.addEventListener("click", () => {
-    menu.classList.add("-translate-x-full");
-    menu.classList.remove("translate-x-0");
-  });
-
-  toggle.addEventListener("click", () => {
-  menu.classList.remove("-translate-x-full");
-  menu.classList.add("translate-x-0");
-  toggle.classList.add("hidden"); // hide hamburger
-});
-
-closeBtn.addEventListener("click", () => {
-  menu.classList.add("-translate-x-full");
-  menu.classList.remove("translate-x-0");
-  toggle.classList.remove("hidden"); // show hamburger again
-});
-
-</script>
-
-
 </html>
