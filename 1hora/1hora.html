@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="script.js">
+ <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <title>1HORA</title>
 </head>
 <body>
@@ -362,34 +363,6 @@
 
 </footer>
 </body>
-<script>
-  const toggle = document.getElementById("menu_toggle");
-  const closeBtn = document.getElementById("close_menu");
-  const menu = document.getElementById("mobile_menu");
-
-  toggle.addEventListener("click", () => {
-    menu.classList.remove("-translate-x-full");
-    menu.classList.add("translate-x-0");
-  });
-
-  closeBtn.addEventListener("click", () => {
-    menu.classList.add("-translate-x-full");
-    menu.classList.remove("translate-x-0");
-  });
-
-  toggle.addEventListener("click", () => {
-  menu.classList.remove("-translate-x-full");
-  menu.classList.add("translate-x-0");
-  toggle.classList.add("hidden"); // hide hamburger
-});
-
-closeBtn.addEventListener("click", () => {
-  menu.classList.add("-translate-x-full");
-  menu.classList.remove("translate-x-0");
-  toggle.classList.remove("hidden"); // show hamburger again
-});
-
-</script>
 
 
 </html>
