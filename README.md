@@ -30,7 +30,15 @@ Step 5:
 Create a src folder in current directory use that <img width="33" height="28" alt="image" src="https://github.com/user-attachments/assets/e628bed9-2b82-43fd-9b62-4e1fbc8223c3" /> icon then a file name input.css 
 
 
-Step 6:
+Step 6:Add this into your input.css
+```
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
+```
+
+
+Step 7:
 Use the command
 ```
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
@@ -38,6 +46,6 @@ npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 this will generate an output.css file in src 
 
 
-Step 7:
+Step 8:
 link the output.css to your html ( you know that much ohterwise you wouldn't have been starting tailwind ) 
 
