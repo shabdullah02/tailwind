@@ -20,7 +20,10 @@ idk but v4.1 didn't worked for me
 
 
 Step 4:
-```npx tailwindcss init``` This will generate the tailwind.config.js file then you go to Line 3 inside [square braces] of Content add
+```
+npx tailwindcss init
+```
+This will generate the tailwind.config.js file then you go to Line 3 inside [square braces] of Content add
 ```
 *.{html,js}
 ```
