@@ -103,12 +103,12 @@
 
   <section class="text-gray-600 body-font  bg-white">
   <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
-    <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+    <div class=" md:w-1/2 md:pr-16 lg:pr-0 pr-0">
       <h1 class="title-font font-normal text-2xl text-black">Information</h1>
       <h5 class="text-sm mt-3 font-semibold text-black">Address</h5>
       <p class="leading-relaxed mt-3 text-black text-sm"> Shenzehn, China <br>901, Edifcio A, Xinghe WORLD1, Bantian Street, distrito de Longgang, Shenzhen, provincia Guangdong.</p>
     </div>
-    <div class="lg:w-4/6 md:w-1/2 py-2 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+    <div class=" md:w-1/2 py-2 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
       <h2 class="text-gray-900 text-2xl font-normal title-font mb-4">Get in Touch</h2>
       <p class="text-black mb-5">If you've got reat produts your making or looking to work wiht us then drop us a line.</p>
       <div class="email&name flex gap-3">
@@ -123,7 +123,14 @@
       </div>
  <div class="relative mb-4">
 
-        <textarea id="message" name="message" placeholder="Message *" class="w-full bg-white rounded border border-gray-100   h-100 outline-none text-gray-700 py-2 px-4 resize-none leading-6 ease-in-out text-sm focus:ring-1"></textarea>
+      <textarea
+  id="message"
+  name="message"
+  placeholder="Message *"
+  class="w-full bg-white rounded border border-gray-100 min-h-[10rem] resize-none overflow-hidden outline-none text-gray-700 py-2 px-4 leading-6 ease-in-out text-sm focus:ring-1 focus:ring-black"
+></textarea>
+
+
       </div>
        <button class="text-white cursor-pointer border-0 py-2.5 px-8 focus:outline-none bg-black rounded text-sm">Send</button>
   </div>
